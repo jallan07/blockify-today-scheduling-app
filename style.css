@@ -69,6 +69,9 @@ thead {
 .description{
   white-space: pre-wrap;
 }
+.fa-save {
+  cursor: pointer;
+}
 
 .time-block{
   text-align: center;
@@ -108,11 +111,6 @@ thead {
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
 }
 
 /* ————————————— */
