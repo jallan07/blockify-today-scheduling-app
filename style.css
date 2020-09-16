@@ -28,6 +28,10 @@ textarea {
   border-bottom: 10px solid #2c3e50;
 }
 
+.jumbotron h1 {
+  font-size: 48px;
+}
+
 h1 i {
   color: #1abc9c;
 }
