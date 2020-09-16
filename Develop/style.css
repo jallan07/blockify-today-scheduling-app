@@ -22,17 +22,31 @@ textarea{
   border-bottom: 10px solid #2c3e50;
 }
 
-.jumbotron p {
-  font-size: 20px;
-  line-height: 30px;
-}
-
 h1 i {
   color: #1abc9c;
 }
 
 h1 span {
   color: #e67e22;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.small-hr {
+  width: 20%;
+  background-color: #7f8c8d;
+  height: 1px;
+}
+
+.today p {
+  line-height: 15px;
+}
+
+.today span {
+  text-decoration: underline;
 }
 
 .description{
