@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- General meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Stylesheet/Resources Links -->
     <link
       rel="stylesheet"
       href="https://bootswatch.com/4/darkly/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- SEO Tags -->
     <title>Blockify - Schedule Your Work Day One Block At A Time | Josh Allan Dev</title>
+    <meta name="description" content="Schedule your work day, one block at a time. Try blockify.today now!">
+
   </head>
 
   <body>
-    <header class="jumbotron">
+    <header class="jumbotron py-5">
       <h1 class="display-3 text-center"><i class="fas fa-calendar-alt mx-2"></i>blockify<span>.today</span></h1>
       <h2 class="lead">Schedule your work day, one block at a time.</h2>
       <hr class="small-hr">
@@ -32,8 +31,63 @@
         <p class="lead">The local time is <span id="localTime"></span>.</p>
       </div>
     </header>
-    <div class="container">
+    <div class="container my-5">
       <!-- Timeblocks go here -->
+      <table class="table table-hover text-center">
+        <thead>
+          <tr>
+            <th scope="col" width="20%">Time</th>
+            <th scope="col" width="60%">To Do Items</th>
+            <th scope="col" width="20%">Save Items</th>
+          </tr>
+        </thead>
+        <tr class="table-secondary">
+          <th scope="row" class="align-middle">9:00 am</th>
+          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+          <td class="align-middle"><i class="fas fa-save"></i></td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row" class="align-middle">10:00 am</th>
+          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+          <td class="align-middle"><i class="fas fa-save"></i></td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row" class="align-middle">11:00 am</th>
+          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+          <td class="align-middle"><i class="fas fa-save"></i></td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row" class="align-middle">12:00 pm</th>
+          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+          <td class="align-middle"><i class="fas fa-save"></i></td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row" class="align-middle">1:00 pm</th>
+          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+          <td class="align-middle"><i class="fas fa-save"></i></td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row" class="align-middle">2:00 pm</th>
+          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+          <td class="align-middle"><i class="fas fa-save"></i></td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row" class="align-middle">3:00 pm</th>
+          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+          <td class="align-middle"><i class="fas fa-save"></i></td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row" class="align-middle">4:00 pm</th>
+          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+          <td class="align-middle"><i class="fas fa-save"></i></td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row" class="align-middle">5:00 pm</th>
+          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="2"></textarea></td>
+          <td class="align-middle"><i class="fas fa-save"></i></td>
+        </tr>
+
+      </table>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
