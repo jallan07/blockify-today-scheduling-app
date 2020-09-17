@@ -33,7 +33,7 @@ textarea {
 }
 
 h1 i {
-  color: #1abc9c;
+  color: #16a085;
 }
 
 h1 span {
@@ -115,6 +115,43 @@ thead {
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+}
+
+/* ——————————————————— */
+/* Toast notifications */
+/* ——————————————————— */
+.toast {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  line-height: 25px;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+  animation: fadein 0.5s, fadeout 0.5s 3.5s;
+}
+
+small {
+  font-size: 14px;
+}
+
+/* Animations to fade the notifications in and out */
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
 }
 
 /* ————————————— */

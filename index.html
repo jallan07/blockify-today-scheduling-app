@@ -43,51 +43,79 @@
         </thead>
         <tr class="table-secondary">
           <th scope="row" class="align-middle">9:00 am</th>
-          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="3" name="9am"></textarea></td>
-          <td class="align-middle"><i class="fas fa-save"></i></td>
+          <td class="align-middle">
+            <textarea class="form-control" id="9am" rows="3"></textarea>
+          </td>
+          <td class="align-middle"><i class="fas fa-save" data-time="9:00 am"></i></td>
         </tr>
         <tr class="table-secondary">
           <th scope="row" class="align-middle">10:00 am</th>
-          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="3" name="10am"></textarea></td>
-          <td class="align-middle"><i class="fas fa-save"></i></td>
+          <td class="align-middle">
+            <textarea class="form-control" id="10am" rows="3"></textarea>
+          </td>
+          <td class="align-middle"><i class="fas fa-save" data-time="10:00 am"></i></td>
         </tr>
         <tr class="table-secondary">
           <th scope="row" class="align-middle">11:00 am</th>
-          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="3" name="11am"></textarea></td>
-          <td class="align-middle"><i class="fas fa-save"></i></td>
+          <td class="align-middle">
+            <textarea class="form-control" id="11am" rows="3"></textarea>
+          </td>
+          <td class="align-middle"><i class="fas fa-save" data-time="11:00 am"></i></td>
         </tr>
         <tr class="table-secondary">
           <th scope="row" class="align-middle">12:00 pm</th>
-          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="3" name="12pm"></textarea></td>
-          <td class="align-middle"><i class="fas fa-save"></i></td>
+          <td class="align-middle">
+            <textarea class="form-control" id="12pm" rows="3"></textarea>
+          </td>
+          <td class="align-middle"><i class="fas fa-save" data-time="12:00 pm"></i></td>
         </tr>
         <tr class="table-secondary">
           <th scope="row" class="align-middle">1:00 pm</th>
-          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="3" name="1pm"></textarea></td>
-          <td class="align-middle"><i class="fas fa-save"></i></td>
+          <td class="align-middle">
+            <textarea class="form-control" id="1pm" rows="3"></textarea>
+          </td>
+          <td class="align-middle"><i class="fas fa-save" data-time="1:00 pm"></i></td>
         </tr>
         <tr class="table-secondary">
           <th scope="row" class="align-middle">2:00 pm</th>
-          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="3" name="2pm"></textarea></td>
-          <td class="align-middle"><i class="fas fa-save"></i></td>
+          <td class="align-middle">
+            <textarea class="form-control" id="2pm" rows="3"></textarea>
+          </td>
+          <td class="align-middle"><i class="fas fa-save" data-time="2:00 pm"></i></td>
         </tr>
         <tr class="table-secondary">
           <th scope="row" class="align-middle">3:00 pm</th>
-          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="3" name="3pm"></textarea></td>
-          <td class="align-middle"><i class="fas fa-save"></i></td>
+          <td class="align-middle">
+            <textarea class="form-control" id="3pm" rows="3"></textarea>
+          </td>
+          <td class="align-middle"><i class="fas fa-save" data-time="3:00 pm"></i></td>
         </tr>
         <tr class="table-secondary">
           <th scope="row" class="align-middle">4:00 pm</th>
-          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="3" name="4pm"></textarea></td>
-          <td class="align-middle"><i class="fas fa-save"></i></td>
+          <td class="align-middle">
+            <textarea class="form-control" id="4pm" rows="3"></textarea>
+          </td>
+          <td class="align-middle"><i class="fas fa-save" data-time="4:00 pm"></i></td>
         </tr>
         <tr class="table-secondary">
           <th scope="row" class="align-middle">5:00 pm</th>
-          <td class="align-middle"><textarea class="form-control" id="exampleTextarea" rows="3" name="5pm"></textarea></td>
-          <td class="align-middle"><i class="fas fa-save"></i></td>
+          <td class="align-middle">
+            <textarea class="form-control" id="5pm" rows="3"></textarea>
+          </td>
+          <td class="align-middle"><i class="fas fa-save" data-time="5:00 pm"></i></td>
         </tr>
-
       </table>
+    </div>
+
+    <div class="toast show d-none" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="mr-auto">Blockify</strong>
+        <small>Just Now</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
