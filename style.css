@@ -103,17 +103,17 @@ thead {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #9b2828!important;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ff6961!important;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #77dd77!important;
   color: white;
 }
 

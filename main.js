@@ -38,7 +38,7 @@ $(".fa-save").on("click", function(e){
         // Set the new data items
         var newData = {
             hour: $(this).data("toast"), // 
-            message: "" // How do I target the specific textarea? Currently, each one has an ID of "__am/pmMessage"
+            message: "Test test test" // How do I target the specific textarea? Currently, each one has an ID of "__am/pmMessage"
         };
         console.log(newData);
         
@@ -46,39 +46,39 @@ $(".fa-save").on("click", function(e){
         if ($(this).data("toast") === "9:00 am") {
             storedItems_9am.push(newData);
             localStorage.setItem("storedItems_9am", JSON.stringify(storedItems_9am));
-        }
+        };
         if ($(this).data("toast") === "10:00 am") {
             storedItems_10am.push(newData);
             localStorage.setItem("storedItems_10am", JSON.stringify(storedItems_10am));
-        }
+        };
         if ($(this).data("toast") === "11:00 am") {
             storedItems_11am.push(newData);
             localStorage.setItem("storedItems_11am", JSON.stringify(storedItems_11am));
-        }
+        };
         if ($(this).data("toast") === "12:00 pm") {
             storedItems_12pm.push(newData);
             localStorage.setItem("storedItems_12pm", JSON.stringify(storedItems_12pm));
-        }
+        };
         if ($(this).data("toast") === "1:00 pm") {
             storedItems_1pm.push(newData);
             localStorage.setItem("storedItems_1pm", JSON.stringify(storedItems_1pm));
-        }
+        };
         if ($(this).data("toast") === "2:00 pm") {
             storedItems_2pm.push(newData);
             localStorage.setItem("storedItems_2pm", JSON.stringify(storedItems_2pm));
-        }
+        };
         if ($(this).data("toast") === "3:00 pm") {
             storedItems_3pm.push(newData);
             localStorage.setItem("storedItems_3pm", JSON.stringify(storedItems_3pm));
-        }
+        };
         if ($(this).data("toast") === "4:00 pm") {
             storedItems_4pm.push(newData);
             localStorage.setItem("storedItems_4pm", JSON.stringify(storedItems_4pm));
-        }
+        };
         if ($(this).data("toast") === "5:00 pm") {
             storedItems_5pm.push(newData);
             localStorage.setItem("storedItems_5pm", JSON.stringify(storedItems_5pm));
-        }
+        };
 
 
 
@@ -104,17 +104,36 @@ $(".fa-save").on("click", function(e){
 
 // Update row classes based on hour of the day
 function updateRowClasses(){
-$('.table-secondary').each(row => {
+$('.tableRow').each(rowHour => {
+    // Set the row variable so we can call it later
+    row = $(".tableRow");
     // Establish a local variable for current hour & set to a number
     var currentHour = moment().format('H');
     currentHour = +currentHour;
+    console.log(currentHour);
     // Establish a local variable for the row hour & set to a number
-    var rowHour = $("tr").data("hour");
-    rowHour = +rowHour;
+    var rowHour = $(".tableRow").data("hour");
+    rowHour = parseInt(rowHour);
+    console.log(rowHour);
     // Compare the data attribute for the row with the current time
         // Change class of past hours to the "past" class
-    if ( rowHour < currentHour){
-        row.addClass(".past");
+    if (rowHour === currentHour){
+        row.addClass("present");
+        row.removeClass("past");
+        row.removeClass("future");
+        row.removeClass("table-secondary");
+    }
+    if (rowHour < currentHour){
+        row.addClass("past");
+        row.removeClass("present");
+        row.removeClass("future");
+        row.removeClass("table-secondary");
+    }
+    if (rowHour > currentHour){
+        row.addClass("future");
+        row.removeClass("present");
+        row.removeClass("past");
+        row.removeClass("table-secondary");
     }
 });
 };
