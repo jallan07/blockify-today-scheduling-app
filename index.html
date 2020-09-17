@@ -5,15 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Stylesheet/Resources Links -->
+    <!-- Bootswatch styles -->
     <link
       rel="stylesheet"
       href="https://bootswatch.com/4/darkly/bootstrap.min.css"
     />
+    <!-- Google fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="style.css" />
     <!-- SEO Tags -->
     <title>Blockify - Schedule Your Work Day, One Block at a Time | Josh Allan Dev</title>
@@ -41,86 +43,90 @@
             <th scope="col" width="15%"><h5>Save Items</h5></th>
           </tr>
         </thead>
-        <tr class="table-secondary">
+        <tr class="table-secondary" data-hour="9">
           <th scope="row" class="align-middle">9:00 am</th>
           <td class="align-middle">
             <textarea class="form-control" id="9am" rows="3"></textarea>
           </td>
-          <td class="align-middle"><i class="fas fa-save" data-time="9:00 am"></i></td>
+          <td class="align-middle"><i class="fas fa-save" data-toast="9:00 am"></i></td>
         </tr>
-        <tr class="table-secondary">
+        <tr class="table-secondary" data-hour="10">
           <th scope="row" class="align-middle">10:00 am</th>
           <td class="align-middle">
             <textarea class="form-control" id="10am" rows="3"></textarea>
           </td>
-          <td class="align-middle"><i class="fas fa-save" data-time="10:00 am"></i></td>
+          <td class="align-middle"><i class="fas fa-save" data-toast="10:00 am"></i></td>
         </tr>
-        <tr class="table-secondary">
+        <tr class="table-secondary" data-hour="11">
           <th scope="row" class="align-middle">11:00 am</th>
           <td class="align-middle">
             <textarea class="form-control" id="11am" rows="3"></textarea>
           </td>
-          <td class="align-middle"><i class="fas fa-save" data-time="11:00 am"></i></td>
+          <td class="align-middle"><i class="fas fa-save" data-toast="11:00 am"></i></td>
         </tr>
-        <tr class="table-secondary">
+        <tr class="table-secondary" data-hour="12">
           <th scope="row" class="align-middle">12:00 pm</th>
           <td class="align-middle">
             <textarea class="form-control" id="12pm" rows="3"></textarea>
           </td>
-          <td class="align-middle"><i class="fas fa-save" data-time="12:00 pm"></i></td>
+          <td class="align-middle"><i class="fas fa-save" data-toast="12:00 pm"></i></td>
         </tr>
-        <tr class="table-secondary">
+        <tr class="table-secondary" data-hour="13">
           <th scope="row" class="align-middle">1:00 pm</th>
           <td class="align-middle">
             <textarea class="form-control" id="1pm" rows="3"></textarea>
           </td>
-          <td class="align-middle"><i class="fas fa-save" data-time="1:00 pm"></i></td>
+          <td class="align-middle"><i class="fas fa-save" data-toast="1:00 pm"></i></td>
         </tr>
-        <tr class="table-secondary">
+        <tr class="table-secondary" data-hour="14">
           <th scope="row" class="align-middle">2:00 pm</th>
           <td class="align-middle">
             <textarea class="form-control" id="2pm" rows="3"></textarea>
           </td>
-          <td class="align-middle"><i class="fas fa-save" data-time="2:00 pm"></i></td>
+          <td class="align-middle"><i class="fas fa-save" data-toast="2:00 pm"></i></td>
         </tr>
-        <tr class="table-secondary">
+        <tr class="table-secondary" data-hour="15">
           <th scope="row" class="align-middle">3:00 pm</th>
           <td class="align-middle">
             <textarea class="form-control" id="3pm" rows="3"></textarea>
           </td>
-          <td class="align-middle"><i class="fas fa-save" data-time="3:00 pm"></i></td>
+          <td class="align-middle"><i class="fas fa-save" data-toast="3:00 pm"></i></td>
         </tr>
-        <tr class="table-secondary">
+        <tr class="table-secondary" data-hour="16">
           <th scope="row" class="align-middle">4:00 pm</th>
           <td class="align-middle">
             <textarea class="form-control" id="4pm" rows="3"></textarea>
           </td>
-          <td class="align-middle"><i class="fas fa-save" data-time="4:00 pm"></i></td>
+          <td class="align-middle"><i class="fas fa-save" data-toast="4:00 pm"></i></td>
         </tr>
-        <tr class="table-secondary">
+        <tr class="table-secondary" data-hour="17">
           <th scope="row" class="align-middle">5:00 pm</th>
           <td class="align-middle">
             <textarea class="form-control" id="5pm" rows="3"></textarea>
           </td>
-          <td class="align-middle"><i class="fas fa-save" data-time="5:00 pm"></i></td>
+          <td class="align-middle"><i class="fas fa-save" data-toast="5:00 pm"></i></td>
         </tr>
       </table>
     </div>
 
+    <section class="container">
     <div class="toast show d-none" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
         <strong class="mr-auto">Blockify</strong>
         <small>Just Now</small>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
       <div class="toast-body"></div>
     </div>
+  </section>
 
+
+    <!-- jQuery Script -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Moment.js Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/8aa4731399.js" crossorigin="anonymous"></script>
+    <!-- Main script -->
     <script src="main.js"></script>
   </body>
 </html>
