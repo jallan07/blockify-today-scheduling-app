@@ -1,23 +1,24 @@
 // Document ready?
 $(document).ready(function() {
-    
+// ——————————————————————— //
+// ——————————————————————— //
+// ——————————————————————— //
+
+// Call the retrieve local storage function upon page load
+getLocalStorage();
+
 // Variable declarations
-var _9_AM_Items = JSON.parse(localStorage.getItem($("9am"))) || [];
-var _10_AM_Items = JSON.parse(localStorage.getItem($("10am"))) || [];
-var _11_AM_Items = JSON.parse(localStorage.getItem($("11am"))) || [];
-var _12_PM_Items = JSON.parse(localStorage.getItem($("12pm"))) || [];
-var _1_PM_Items = JSON.parse(localStorage.getItem($("1pm"))) || [];
-var _2_PM_Items = JSON.parse(localStorage.getItem($("2pm"))) || [];
-var _3_PM_Items = JSON.parse(localStorage.getItem($("3pm"))) || [];
-var _4_PM_Items = JSON.parse(localStorage.getItem($("4pm"))) || [];
-var _5_PM_Items = JSON.parse(localStorage.getItem($("5pm"))) || [];
 
 
 // Display current date and time in the jumbotron
-$("#currentDay").text(moment().format("dddd, MMMM Do"));
-$("#localTime").text(moment().format("h:mm a"));
+var update = function () {
+    $("#currentDay").text(moment().format("dddd, MMMM Do"));
+    $("#localTime").text(moment().format('h:mm:ss a'));
+};
+update();
+setInterval(update, 1000);
 
-// Save user input when the save button is clicked
+// Set local storage -- Save user input when the save button is clicked
 $(".fa-save").on("click", function(){
     // alert("This doesn't save the input yet.") // placeholder -- not ready yet.
 
@@ -44,6 +45,11 @@ $(".fa-save").on("click", function(){
 
 // Change class of upcoming hours to the "upcoming" class
 
+
+// Retrieve local storage
+function getLocalStorage(){
+    console.log("Local storage has been retrieved.")
+};
            
 
 // ——————————————————————— //
