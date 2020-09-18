@@ -13,8 +13,6 @@ var storedItems_4pm = JSON.parse(localStorage.getItem("storedItems_4pm")) || [];
 var storedItems_5pm = JSON.parse(localStorage.getItem("storedItems_5pm")) || [];
 
 
-// Call the update row classes function upon page load
-updateRowClasses();
 // ——————————————————————— //
 // ——————————————————————— //
 // ——————————————————————— //
@@ -37,47 +35,47 @@ $(".fa-save").on("click", function(e){
         e.preventDefault();
         // Set the new data items
         var newData = {
-            hour: $(this).data("toast"), // 
+            hour: $(this).data("time"), // 
             message: "Test test test" // How do I target the specific textarea? Currently, each one has an ID of "__am/pmMessage"
         };
         console.log(newData);
         
         // Push the newData to the corresponding stored arrays and set to local storage
-        if ($(this).data("toast") === "9:00 am") {
+        if ($(this).data("time") === "9:00 am") {
             storedItems_9am.push(newData);
-            localStorage.setItem("storedItems_9am", JSON.stringify(storedItems_9am));
+            localStorage.setItem("9:00 am", JSON.stringify(storedItems_9am));
         };
-        if ($(this).data("toast") === "10:00 am") {
+        if ($(this).data("time") === "10:00 am") {
             storedItems_10am.push(newData);
-            localStorage.setItem("storedItems_10am", JSON.stringify(storedItems_10am));
+            localStorage.setItem("10:00 am", JSON.stringify(storedItems_10am));
         };
-        if ($(this).data("toast") === "11:00 am") {
+        if ($(this).data("time") === "11:00 am") {
             storedItems_11am.push(newData);
-            localStorage.setItem("storedItems_11am", JSON.stringify(storedItems_11am));
+            localStorage.setItem("11:00 am", JSON.stringify(storedItems_11am));
         };
-        if ($(this).data("toast") === "12:00 pm") {
+        if ($(this).data("time") === "12:00 pm") {
             storedItems_12pm.push(newData);
-            localStorage.setItem("storedItems_12pm", JSON.stringify(storedItems_12pm));
+            localStorage.setItem("12:00 pm", JSON.stringify(storedItems_12pm));
         };
-        if ($(this).data("toast") === "1:00 pm") {
+        if ($(this).data("time") === "1:00 pm") {
             storedItems_1pm.push(newData);
-            localStorage.setItem("storedItems_1pm", JSON.stringify(storedItems_1pm));
+            localStorage.setItem("1:00 pm", JSON.stringify(storedItems_1pm));
         };
-        if ($(this).data("toast") === "2:00 pm") {
+        if ($(this).data("time") === "2:00 pm") {
             storedItems_2pm.push(newData);
-            localStorage.setItem("storedItems_2pm", JSON.stringify(storedItems_2pm));
+            localStorage.setItem("2:00 pm", JSON.stringify(storedItems_2pm));
         };
-        if ($(this).data("toast") === "3:00 pm") {
+        if ($(this).data("time") === "3:00 pm") {
             storedItems_3pm.push(newData);
-            localStorage.setItem("storedItems_3pm", JSON.stringify(storedItems_3pm));
+            localStorage.setItem("3:00 pm", JSON.stringify(storedItems_3pm));
         };
-        if ($(this).data("toast") === "4:00 pm") {
+        if ($(this).data("time") === "4:00 pm") {
             storedItems_4pm.push(newData);
-            localStorage.setItem("storedItems_4pm", JSON.stringify(storedItems_4pm));
+            localStorage.setItem("4:00 pm", JSON.stringify(storedItems_4pm));
         };
-        if ($(this).data("toast") === "5:00 pm") {
+        if ($(this).data("time") === "5:00 pm") {
             storedItems_5pm.push(newData);
-            localStorage.setItem("storedItems_5pm", JSON.stringify(storedItems_5pm));
+            localStorage.setItem("5:00 pm", JSON.stringify(storedItems_5pm));
         };
 
 
@@ -88,63 +86,81 @@ $(".fa-save").on("click", function(e){
     // Toast notification
         // Establish the toast div as the variable x so we can manipulate it more easily
         var x = $(".toast");
+        
         // Unhide the toast notification
         x.removeClass("d-none");
+        
         // Pull out a random inspiring quote from the phrase arary
         var inspo = phraseArr[Math.floor(Math.random() * phraseArr.length)];
+        
         // Set the text for the toast notification
         $(".toast-body").text(inspo);
-        $("small").text("Items scheduled for " + $(this).data("toast"));
+        $("small").text("Items scheduled for " + $(this).data("time"));
+        
         // After 3 seconds, remove the notification
         setTimeout(function(){
             x.addClass("d-none"); }
             , 4000);
 });
 
+// ——————————— //
 
-// Update row classes based on hour of the day
-function updateRowClasses(){
-$('.tableRow').each(rowHour => {
-    // Set the row variable so we can call it later
-    row = $(".tableRow");
-    // Establish a local variable for current hour & set to a number
+// // Update row classes based on hour of the day
+// function updateRowClasses(){
+//     // Establish a local variable for current hour & set to a number
+//     var currentHour = moment().format('H');
+//     currentHour = +currentHour;
+//     // Establish a local variable for the row hour & set to a number
+//     var rowHour = $(".tableRow").data("hour");
+//     rowHour = parseInt(rowHour);
+//     // // Iterate over the rows using a for loop and the .eq() method
+//     for (var i = 0; i < 9; i++){
+//         var row = $(".tableRow");
+//         // console.log(row[i]);
+//         // Compare the data attribute for the row with the current time
+//         // if (rowHour === currentHour){
+//         //     row[i].addClass("present");
+//         //     row[i].removeClass("past");
+//         //     row[i].removeClass("future");
+//         //     row[i].removeClass("table-secondary");
+//         // }
+//         // if (rowHour < currentHour){
+//         //     row[i].addClass("past");
+//         //     row[i].removeClass("present");
+//         //     row[i].removeClass("future");
+//         //     row[i].removeClass("table-secondary");
+//         // }
+//         // if (rowHour > currentHour){
+//         //     row[i].addClass("future");
+//         //     row[i].removeClass("present");
+//         //     row[i].removeClass("past");
+//         //     row[i].removeClass("table-secondary");
+//         // }
+//     }
+// };
+        
+
+for (var j = 0; j < 9; j++){
+
+    // define the row elements
+    var row = ($(".tableRow")[j]);
+        console.log(row);
+
+    // define the current hour (should stay the same each time the for loop iterates)
     var currentHour = moment().format('H');
-    currentHour = +currentHour;
-    console.log(currentHour);
-    // Establish a local variable for the row hour & set to a number
-    var rowHour = $(".tableRow").data("hour");
-    rowHour = parseInt(rowHour);
-    console.log(rowHour);
-    // Compare the data attribute for the row with the current time
-        // Change class of past hours to the "past" class
-    if (rowHour === currentHour){
-        row.addClass("present");
-        row.removeClass("past");
-        row.removeClass("future");
-        row.removeClass("table-secondary");
-    }
-    if (rowHour < currentHour){
-        row.addClass("past");
-        row.removeClass("present");
-        row.removeClass("future");
-        row.removeClass("table-secondary");
-    }
-    if (rowHour > currentHour){
-        row.addClass("future");
-        row.removeClass("present");
-        row.removeClass("past");
-        row.removeClass("table-secondary");
-    }
-});
-};
+        currentHour = +currentHour;
+        console.log(currentHour);
 
+    // iterate through each row to find each row hour
+    var rowHour = $(".tableRow").data("hour")[j];
+        rowHour = parseInt(rowHour); 
+        console.log(rowHour); // Currently logging to the console as NaN
 
+    // create if statements that adjust row classes based on the current hour
+    
 
-// Change class of current hour to the "current" class
+}
 
-
-// Change class of upcoming hours to the "upcoming" class
-           
 
 // ——————————————————————— //
 // ——————————————————————— //
