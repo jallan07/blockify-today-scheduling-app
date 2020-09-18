@@ -2,180 +2,195 @@
 /* General styling */
 /* ——————————————— */
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
-  background-color: #34495e;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1;
+	background-color: #34495e;
+}
+
+header {
+	background-color: #34495e;
 }
 
 textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+	background: transparent;
+	border: none;
+	resize: none;
+	color: #000000;
+	border-left: 1px solid black;
+	padding: 10px;
 }
 
 /* ————————————————— */
 /* Jumbotron styling */
 /* ————————————————— */
 .jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: #ecf0f1;
-  border-radius: 0;
-  border-bottom: 10px solid #2c3e50;
+	text-align: center;
+	background-color: transparent;
+	color: #ecf0f1;
+	border-radius: 0;
+	border-bottom: 10px solid #2c3e50;
 }
 
 .jumbotron h1 {
-  font-size: 48px;
+	font-size: 48px;
 }
 
 h1 i {
-  color: #16a085;
+	color: #16a085;
 }
 
 h1 span {
-  color: #e67e22;
+	color: #e67e22;
 }
 
 .jumbotron p {
-  font-size: 20px;
-  line-height: 30px;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 .small-hr {
-  width: 20%;
-  background-color: #7f8c8d;
-  height: 1px;
+	width: 20%;
+	background-color: #7f8c8d;
+	height: 1px;
 }
 
 .today p {
-  line-height: 15px;
+	line-height: 15px;
 }
 
 .today span {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* ————————————————— */
 /* Scheduler Styling */
 /* ————————————————— */
 thead {
-  background-color: #2c3e50;
+	background-color: #2c3e50;
 }
 
 .table-secondary i {
-  font-size: 30px;
+	font-size: 30px;
 }
 
-.description{
-  white-space: pre-wrap;
+.description {
+	white-space: pre-wrap;
 }
-.fa-save {
-  font-size: 30px;
-  cursor: pointer;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07)
-;
+.fas {
+	font-size: 35px;
+	cursor: pointer;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+		0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-.time-block{
-  text-align: center;
-  border-radius: 15px;
+.time-block {
+	text-align: center;
+	border-radius: 15px;
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+	white-space: pre-wrap;
+	height: 80px;
+	border-top: 1px solid white;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+	background-color: #ffffff;
+	color: #000000;
+	border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #9b2828!important;
-  color: white;
+	background-color: #95a5a6;
+	color: white;
 }
 
 .present {
-  background-color: #ff6961!important;
-  color: white;
+	background-color: #2ecc71;
+	color: white;
 }
 
 .future {
-  background-color: #77dd77!important;
-  color: white;
-}
-
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+	background-color: #2d3e4f;
+	color: white;
 }
 
 /* ——————————————————— */
 /* Toast notifications */
 /* ——————————————————— */
 .toast {
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  line-height: 25px;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
-  animation: fadein 0.5s, fadeout 0.5s 3.5s;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07)
-;
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	line-height: 25px;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+	animation: fadein 0.5s, fadeout 0.5s 3.5s;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+		0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 small {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 /* Animations to fade the notifications in and out */
 @-webkit-keyframes fadein {
-  from {top: 0; opacity: 0;}
-  to {top: 30px; opacity: 1;}
+	from {
+		top: 0;
+		opacity: 0;
+	}
+	to {
+		top: 30px;
+		opacity: 1;
+	}
 }
 
 @keyframes fadein {
-  from {top: 0; opacity: 0;}
-  to {top: 30px; opacity: 1;}
+	from {
+		top: 0;
+		opacity: 0;
+	}
+	to {
+		top: 30px;
+		opacity: 1;
+	}
 }
 
 @-webkit-keyframes fadeout {
-  from {top: 30px; opacity: 1;}
-  to {top: 0; opacity: 0;}
+	from {
+		top: 30px;
+		opacity: 1;
+	}
+	to {
+		top: 0;
+		opacity: 0;
+	}
 }
 
 @keyframes fadeout {
-  from {top: 30px; opacity: 1;}
-  to {top: 0; opacity: 0;}
+	from {
+		top: 30px;
+		opacity: 1;
+	}
+	to {
+		top: 0;
+		opacity: 0;
+	}
 }
 
 /* ————————————— */
 /* Media Queries */
 /* ————————————— */
-@media screen and (max-width:769px){
-  .jumbotron h1{
-    font-size: 32px;
-  }
+@media screen and (max-width: 769px) {
+	.jumbotron h1 {
+		font-size: 32px;
+	}
+	.fas {
+		font-size: 25px;
+	}
 }
