@@ -52,8 +52,10 @@ $(document).ready(function () {
 	// END Display current date and time in the jumbotron //
 	// —————————————————————————————————————————————————— //
 
-	// Set local storage -- Save user input when the save button is clicked
-	$(".fa-save").on("click", function (e) {
+	// ————————————————————————————— //
+	// BEGIN save button click event //
+	// ————————————————————————————— //
+	$(".fa-calendar-plus").on("click", function (e) {
 		// Save textarea input to local storage
 		// Prevent previous entries from being cleared automatically
 		e.preventDefault();
@@ -121,6 +123,19 @@ $(document).ready(function () {
 			x.addClass("d-none");
 		}, 4000);
 	});
+	// ——————————————————————————— //
+	// END save button click event //
+	// ——————————————————————————— //
+
+	// —————————————————————————————— //
+	// BEGIN clear button click event //
+	// —————————————————————————————— //
+	$(".fa-calendar-plus").on("click", function (e) {
+		localStorage.clear();
+	});
+	// ———————————————————————————— //
+	// END clear button click event //
+	// ———————————————————————————— //
 
 	// ——————————————————————————————————————————— //
 	// BEGIN row styling based on the current hour //
