@@ -130,8 +130,8 @@ $(document).ready(function () {
 	// —————————————————————————————— //
 	// BEGIN clear button click event //
 	// —————————————————————————————— //
-	$(".fa-calendar-plus").on("click", function (e) {
-		localStorage.clear();
+	$(".fa-calendar-minus").on("click", function (e) {
+		console.log("local storage has been cleared!");
 	});
 	// ———————————————————————————— //
 	// END clear button click event //
