@@ -41,7 +41,7 @@ h1 i {
 }
 
 h1 span {
-	color: #e67e22;
+	color: #d35400;
 }
 
 .jumbotron p {
@@ -80,6 +80,10 @@ thead {
 .fas {
 	font-size: 35px;
 	cursor: pointer;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, -0.018),
+		0 6.7px 5.3px rgba(0, 0, 0, -0.01), 0 12.5px 10px rgba(0, 0, 0, 0.003),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
+		0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 .time-block {
@@ -120,25 +124,37 @@ thead {
 
 #toastContainer {
 	position: fixed;
-	right: 5%;
-	top: 5%;
+	top: 10px;
+	right: 10px;
+	width: 300px;
 }
 
-.toast {
-	color: white;
+.clearToast {
+	background-color: #7f8c8d;
 	border-radius: 5px;
-	position: relative;
-	line-height: 25px;
+	color: #fff;
+	padding: 1rem 2rem;
+	margin: 1rem;
 	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
 	animation: fadein 0.5s, fadeout 0.5s 2.5s;
-	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-		0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
-		0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, -0.018),
+		0 6.7px 5.3px rgba(0, 0, 0, -0.01), 0 12.5px 10px rgba(0, 0, 0, 0.003),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
 		0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-small {
-	font-size: 14px;
+.saveToast {
+	background-color: #2c3e50;
+	border-radius: 5px;
+	color: #fff;
+	padding: 1rem 2rem;
+	margin: 1rem;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, -0.018),
+		0 6.7px 5.3px rgba(0, 0, 0, -0.01), 0 12.5px 10px rgba(0, 0, 0, 0.003),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
+		0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 /* Animations to fade the notifications in and out */

@@ -65,7 +65,7 @@ $(document).ready(function () {
 			localStorage.setItem("17", JSON.stringify(task.message));
 		}
 		// Fire off a toast notification
-		toastNotifications();
+		saveToast();
 	});
 
 	// ———————————————————————— //
@@ -78,6 +78,8 @@ $(document).ready(function () {
 		localStorage.removeItem(id);
 		// clear text areas
 		$("#" + id).val("");
+		// fire a clear task toast notification
+		clearToast();
 	});
 
 	// ——————————————————————————————————————————————————— //
