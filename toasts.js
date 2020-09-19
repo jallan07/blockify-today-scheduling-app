@@ -12,7 +12,7 @@ function toastNotifications() {
 	// After 3 seconds, remove the notification
 	setTimeout(function () {
 		x.addClass("d-none");
-	}, 4000);
+	}, 3000);
 }
 // ——————————————————————— //
 // END Toast notifications //
