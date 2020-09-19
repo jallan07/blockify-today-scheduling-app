@@ -13,16 +13,6 @@ $(document).ready(function () {
 	var storedItems_16 = localStorage.getItem(storedItems_16) || [];
 	var storedItems_17 = localStorage.getItem(storedItems_17) || [];
 
-	// —————————————————————————————————————————————— //
-	// display current date and time in the jumbotron //
-	// —————————————————————————————————————————————— //
-	var update = function () {
-		$("#currentDay").text(moment().format("dddd, MMMM Do"));
-		$("#localTime").text(moment().format("h:mm:ss a"));
-	};
-	update();
-	setInterval(update, 1000);
-
 	// ——————————————————————— //
 	// save button click event //
 	// ——————————————————————— //
@@ -31,7 +21,6 @@ $(document).ready(function () {
 
 		// grab the data-hour attribute value so we can use that in our logic to update the correct textareas
 		var id = $(this).data("hour");
-		console.log(id);
 
 		// Set the new data items
 		var task = {
