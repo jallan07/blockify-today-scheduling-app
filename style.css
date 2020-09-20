@@ -21,6 +21,15 @@ textarea {
 	padding: 10px;
 }
 
+.fas {
+	font-size: 35px;
+	cursor: pointer;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, -0.018),
+		0 6.7px 5.3px rgba(0, 0, 0, -0.01), 0 12.5px 10px rgba(0, 0, 0, 0.003),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
+		0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
 /* ————————————————— */
 /* Jumbotron styling */
 /* ————————————————— */
@@ -36,12 +45,13 @@ textarea {
 	font-size: 48px;
 }
 
-h1 i {
-	color: #2ecc71;
+.logo {
+	color: #2980b9;
+	font-size: 45px;
 }
 
 h1 span {
-	color: #d35400;
+	color: #e74c3c;
 }
 
 .jumbotron p {
@@ -76,14 +86,6 @@ thead {
 
 .description {
 	white-space: pre-wrap;
-}
-.fas {
-	font-size: 35px;
-	cursor: pointer;
-	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, -0.018),
-		0 6.7px 5.3px rgba(0, 0, 0, -0.01), 0 12.5px 10px rgba(0, 0, 0, 0.003),
-		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
-		0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 .time-block {
@@ -130,8 +132,9 @@ thead {
 }
 
 .clearToast {
-	background-color: #7f8c8d;
+	background-color: #e74c3c;
 	border-radius: 5px;
+	width: 100%;
 	color: #fff;
 	padding: 1rem 2rem;
 	margin: 1rem;
@@ -144,8 +147,9 @@ thead {
 }
 
 .saveToast {
-	background-color: #2c3e50;
+	background-color: #2980b9;
 	border-radius: 5px;
+	width: 100%;
 	color: #fff;
 	padding: 1rem 2rem;
 	margin: 1rem;
@@ -211,5 +215,8 @@ thead {
 	}
 	.fas {
 		font-size: 25px;
+	}
+	.logo {
+		font-size: 32px;
 	}
 }

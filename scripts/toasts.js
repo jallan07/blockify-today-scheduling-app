@@ -1,11 +1,14 @@
 const container = $("#toastContainer");
 
+// Tutorial on toast code followed here: https://www.youtube.com/watch?v=8GPPJpiLqHk&t=666s
+
 // on save button click, this notification fires
 function saveToast() {
-	const notif = $("<div>");
+	var notif = $("<div>");
+
 	notif.addClass("saveToast");
 
-	notif.text("Task added to block.");
+	notif.text("Task added to your block.");
 
 	container.prepend(notif);
 
@@ -19,7 +22,7 @@ function clearToast() {
 	const notif = $("<div>");
 	notif.addClass("clearToast");
 
-	notif.text("Task removed from block.");
+	notif.text("Task removed from your block.");
 
 	container.prepend(notif);
 

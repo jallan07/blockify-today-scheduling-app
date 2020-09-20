@@ -19,11 +19,12 @@ $(document).ready(function () {
 			$(row).removeClass("future");
 			$(row).removeClass("present");
 			$(row).removeClass("table-secondary");
-			$(textarea).css("background-color", "#ecf0f1");
 			$(textarea).attr("disabled", '""');
 			$(textarea).attr("rows", "1");
+			$(textarea).css("background-color", "#ecf0f1");
 			$(textarea).css("border-color", "#c0392b");
 			$(textarea).css("border-width", "1px");
+			$(textarea).html("Entries are disabled for past hours.");
 		}
 		if (rowHour === currentHour) {
 			$(row).addClass("present");
