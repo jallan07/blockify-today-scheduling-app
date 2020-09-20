@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- General meta tags -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- Bootswatch styles -->
+		<link
+			rel="stylesheet"
+			href="https://bootswatch.com/4/darkly/bootstrap.min.css"
+		/>
+		<!-- Google fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Custom styles -->
+		<link rel="stylesheet" href="styles-v2.css" />
+		<!-- SEO Tags -->
+		<title>
+			Blockify - Schedule Your Work Day, One Block at a Time | Josh Allan Dev
+		</title>
+		<meta
+			name="description"
+			content="Schedule your work day, one block at a time. Try blockify.today now!"
+		/>
+	</head>
+
+	<body>
+		<header class="jumbotron py-3">
+			<h1 class="display-3 text-center pt-3">
+				<i class="fas fa-calendar-alt mx-2 my-0 logo"></i>blockify<span
+					>.today</span
+				>
+			</h1>
+			<hr class="small-hr" />
+			<div class="today">
+				<p class="lead">Today is <span id="currentDay"></span>.</p>
+				<p class="lead">The local time is <span id="localTime"></span>.</p>
+			</div>
+		</header>
+
+		<section class="container my-5">
+			<!-- Timeblocks go here -->
+			<div class="row my-2">
+				<div class="col-sm-6 col-md-4 d-flex">
+					<div
+						class="card border-primary mb-4 mx-auto flex-fill"
+						data-hour="9"
+						style="max-width: 30rem"
+					>
+						<div class="card-header">
+							9:00 am
+							<div class="float-right">
+								<i class="far fa-edit"></i>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text" data-hour="9"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 d-flex">
+					<div
+						class="card border-primary mb-4 mx-auto flex-fill"
+						data-hour="10"
+						style="max-width: 30rem"
+					>
+						<div class="card-header">
+							10:00 am
+							<div class="float-right">
+								<i class="far fa-edit"></i>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text" data-hour="10"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 d-flex">
+					<div
+						class="card border-primary mb-4 mx-auto flex-fill"
+						data-hour="11"
+						style="max-width: 30rem"
+					>
+						<div class="card-header">
+							11:00 am
+							<div class="float-right">
+								<i class="far fa-edit"></i>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text" data-hour="11"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row my-2">
+				<div class="col-sm-6 col-md-4 d-flex">
+					<div
+						class="card border-primary mb-4 mx-auto flex-fill"
+						data-hour="12"
+						style="max-width: 30rem"
+					>
+						<div class="card-header">
+							12:00 pm
+							<div class="float-right">
+								<i class="far fa-edit"></i>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text" data-hour="12"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 d-flex">
+					<div
+						class="card border-primary mb-4 mx-auto flex-fill"
+						data-hour="13"
+						style="max-width: 30rem"
+					>
+						<div class="card-header">
+							1:00 pm
+							<div class="float-right">
+								<i class="far fa-edit"></i>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text" data-hour="13"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 d-flex">
+					<div
+						class="card border-primary mb-4 mx-auto flex-fill"
+						data-hour="14"
+						style="max-width: 30rem"
+					>
+						<div class="card-header">
+							2:00 pm
+							<div class="float-right">
+								<i class="far fa-edit"></i>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text" data-hour="14"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row my-2">
+				<div class="col-sm-6 col-md-4 d-flex">
+					<div
+						class="card border-primary mb-4 mx-auto flex-fill"
+						data-hour="15"
+						style="max-width: 30rem"
+					>
+						<div class="card-header">
+							3:00 pm
+							<div class="float-right">
+								<i class="far fa-edit"></i>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text" data-hour="15"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 d-flex">
+					<div
+						class="card border-primary mb-4 mx-auto flex-fill"
+						data-hour="16"
+						style="max-width: 30rem"
+					>
+						<div class="card-header">
+							4:00 pm
+							<div class="float-right">
+								<i class="far fa-edit"></i>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text" data-hour="16"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 d-flex">
+					<div
+						class="card border-primary mb-4 mx-auto flex-fill"
+						data-hour="17"
+						style="max-width: 30rem"
+					>
+						<div class="card-header">
+							5:00 pm
+							<div class="float-right">
+								<i class="far fa-edit"></i>
+							</div>
+						</div>
+						<div class="card-body">
+							<p class="card-text" data-hour="17"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Toast notification container -->
+		<section id="toastContainer"></section>
+
+		<!-- jQuery Script -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<!-- Moment.js Script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<!-- Font Awesome Script -->
+		<script
+			src="https://kit.fontawesome.com/8aa4731399.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Main scripts -->
+		<script src="time-v2.js"></script>
+		<script src="tasks-v2.js"></script>
+		<script src="rows-v2.js"></script>
+		<!-- <script src="toasts.js"></script>
+		<script src="rows.js"></script> -->
+		<!-- <script src="main.js"></script> -->
+	</body>
+</html>

@@ -120,6 +120,10 @@ thead {
 	color: white;
 }
 
+.footer {
+	text-decoration: underline;
+}
+
 /* ——————————————————— */
 /* Toast notifications */
 /* ——————————————————— */
