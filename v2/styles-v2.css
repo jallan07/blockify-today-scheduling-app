@@ -15,10 +15,6 @@ h1 {
 	font-size: 18px;
 }
 
-.modal {
-	display: hidden;
-}
-
-.active {
-	display: visible;
+.fa-edit {
+	cursor: pointer;
 }
