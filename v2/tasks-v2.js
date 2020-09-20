@@ -12,16 +12,26 @@ var fakeTasks = [
 	"She thinks I'm too critical—that's another fault of hers.",
 	"Here's some money. Go see a Star War.",
 	"And that's why you always leave a note!",
+	"I don’t understand the question and I won’t respond to it.",
+	"If you weren’t all the way on the other side of the room, I’d slap your face.",
+	"In this business of show, you have to have the heart of an angel and the hyde of an elephant.",
+	"There are dozens of us. Dozens!",
+	"Has anyone in this family even seen a chicken?",
+	"These are my awards, mother. From Army.",
+	"I was made to understand that there would be grilled cheese sandwiches here.",
+	"I'm a monster!",
 ];
 
 for (var i = 0; i < fakeTasks.length; i++) {
 	var id = $(".card-text")[i];
 	var rndNum = Math.floor(Math.random() * fakeTasks.length);
 	$(id).text(fakeTasks[rndNum]);
+	$(id).css("color", "rgb(255, 255, 255, 0.35)");
 }
 
 // create an event listener for the edit button
-$(".fa-edit").on("click", function () {
+$(".fa-edit, .card-text").on("click", function () {
 	console.log("hi");
 	// need to create code that will show the modal when it is clicked
+	$("#exampleModalCenter").modal("show");
 });
