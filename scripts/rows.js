@@ -19,12 +19,11 @@ $(document).ready(function () {
 			$(row).removeClass("future");
 			$(row).removeClass("present");
 			$(row).removeClass("table-secondary");
-			$(textarea).attr("disabled", '""');
 			$(textarea).attr("rows", "1");
 			$(textarea).css("background-color", "#ecf0f1");
 			$(textarea).css("border-color", "#c0392b");
-			$(textarea).css("border-width", "1px");
-			$(textarea).html("Entries are disabled for past hours.");
+			$(textarea).css("border-width", "2px");
+			$(textarea).css("border-style", "dashed");
 		}
 		if (rowHour === currentHour) {
 			$(row).addClass("present");
@@ -43,6 +42,7 @@ $(document).ready(function () {
 			$(textarea).css("border-width", "2px");
 		}
 	}
+
 	// ————————————————————————————————————————— //
 	// END row styling based on the current hour //
 	// ————————————————————————————————————————— //
