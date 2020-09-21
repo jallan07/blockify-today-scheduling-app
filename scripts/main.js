@@ -25,7 +25,7 @@ $(document).ready(function () {
 		// Set the new data items
 		var task = {
 			hour: $(this).data("hour"),
-			message: $("textarea#" + id).val(), // How do I target the specific textarea? Currently, each one has an ID of "__am/pmMessage"
+			message: $("textarea#" + id).val(),
 		};
 		// Push the task to the corresponding stored arrays and set to local storage
 		if ($(this).data("hour") === 9) {
